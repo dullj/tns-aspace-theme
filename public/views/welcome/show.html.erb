@@ -1,0 +1,35 @@
+<div class="row">
+<div class="col-sm-12">
+  <h2><%= t('brand.welcome_head') %></h2>
+    <div> <%= t('brand.welcome_message').html_safe %> </div>
+</div>
+</div>
+
+  <%= render partial: 'shared/search', locals: {
+    :search_url => "/search",
+    :title => t('archive._plural'),
+    :limit_options => [
+          ["#{t('actions.search')} #{t('search-limits.all')}",''],
+          [t('search-limit', :limit => t('search-limits.resources')),'resource'],
+          [t('search-limit', :limit => t('search-limits.digital')),'digital_object']
+        ],
+    :field_options => [
+          ["#{t('search_results.filter.fullrecord')}",''],
+          ["#{t('search_results.filter.title')}",'title'],
+          ["#{t('search_results.filter.creators')}",'creators_text'],
+          ["#{t('search_results.filter.subjects')}",'subjects_text'],
+          ["#{t('search_results.filter.notes')}", 'notes'],
+          ["#{t('search_results.filter.identifier')}", 'four_part_id']
+         ]
+  } %>
+
+<div class="row welcome-text">
+  <div class="col-sm-6">
+    <h3>About this site</h3>
+    <p><a href="https://www.lipsum.com/">Lorem ipsum</a> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="col-sm-6">
+    <h3>Visiting Special Collections</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
