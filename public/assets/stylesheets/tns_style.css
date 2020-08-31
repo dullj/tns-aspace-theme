@@ -100,6 +100,13 @@ nav nav navbar-nav {
   border-color: #767676;
 }
 
+/* HOMEPAGE SEARCH */
+
+.search {
+  padding-bottom: 30px;
+  border-bottom: solid 1px;
+}
+
 /* RESULTS DISPLAY */
 
 .record-type-badge.resource {
