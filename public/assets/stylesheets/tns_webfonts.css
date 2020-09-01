@@ -1,0 +1,27 @@
+@font-face {
+font-family: 'neue-regular';
+font-weight: 400;
+font-style: normal;
+src: url('../webfonts/NeueRegular.woff') format('woff');
+}
+
+@font-face {
+font-family: 'NeueDisplay-Random';
+font-weight: 400;
+font-style: normal;
+src: url('../webfonts/NeueDisplay-Random.woff') format('woff');
+}
+
+@font-face {
+font-family: 'neue-black';
+font-weight: 400;
+font-style: normal;
+src: url('../webfonts/Neue-Black.woff') format('woff');
+}
+
+@font-face {
+font-family: 'neue-display';
+font-weight: 400;
+font-style: normal;
+src: url('../webfonts/normaldisplay-black.woff') format('woff');
+}
