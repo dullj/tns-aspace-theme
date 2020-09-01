@@ -1,11 +1,114 @@
 h1 {
-  color: #000000;
+  color: #e42a1d;
+  font-family: neue display;
+  font-size: 1.5rem;
 }
 
 h2 {
-  color: #000000;
+  font-family: neue;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: -.01rem;
 }
 
 h3 {
-  color: #e82e21;
+  color: #000000;
+  font-family: neue;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 25px;
+  font-weight: 400;
+  font-family: neue;
+}
+
+a { 
+  color: #e42a1d;
+}  
+
+a:hover {
+  color: #e42a1d;
+  text-decoration: underline;
+}
+
+/* HEADER */
+
+.navbar-default .navbar-nav>li>a {
+  color: #767676;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: neue-black;
+  letter-spacing: .05rem;
+  text-decoration: underline;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #e42a1d;
+}
+
+#header .logo {
+  display: none;
+;
+}
+
+.top-bar {
+  border-bottom: 0;
+  border-top: 0;
+}  
+
+#header>.row {
+  border-bottom: 0;
+}
+
+.row welcome-text {
+  padding-top: 30px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  background-color: #e7e7e7; 
+}
+
+.navbar-default {
+  background-color: #eeeeee;
+}
+
+nav nav navbar-nav {
+  float: right;
+}
+  
+
+/* BUTTONS */
+
+.btn-primary {
+  font-family: neue;
+  font-size: 12px;
+  line-height: 23px;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: .05rem;
+  color: #e42a1d;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border-color: #767676;
+}
+
+/* HOMEPAGE SEARCH */
+
+.search {
+  padding-bottom: 30px;
+  border-bottom: solid 1px;
+}
+
+/* RESULTS DISPLAY */
+
+.record-type-badge.resource {
+  color: #000000;
 }
