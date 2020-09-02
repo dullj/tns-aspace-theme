@@ -108,11 +108,6 @@
 	 <% x = render partial: 'shared/present_list_external_docs', locals: {:list =>  @result.external_documents, :list_clss => 'external_docs'} %>
 	  <%= render partial: 'shared/accordion_panel', locals: {:p_title => t('external_docs'), :p_id => 'ext_doc_list', :p_body => x} %>
 	<% end %>
-	<% unless @repo_info.blank? || @repo_info['top']['name'].blank? %>
-           <% x= render partial: 'repositories/repository_details' %>
-	    <%= render partial: 'shared/accordion_panel', locals: {:p_title =>  t('repository.details'),
-	    :p_id => 'repo_deets', :p_body => x} %>
-        <% end %>
         <% if @result.kind_of?(Resource) && !@result.related_accessions.blank? %>
           <% x = render partial: 'resources/related_accessions', locals: {:accessions => @result.related_accessions} %>
           <%= render partial: 'shared/accordion_panel', locals: {:p_title => t('related_accessions'), :p_id => 'related_accessions_list', :p_body => x} %>
