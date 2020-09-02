@@ -169,11 +169,16 @@ nav nav navbar-nav {
 /* COLLECTION PAGE */
 
 .breadcrumb * a {
-   color: #000000;
+   color: #ffffff;
 }
 
 .breadcrumb {
   background-color: #000000;
+}
+
+.tabbing.nav-pills>li>a.hover {
+  background-color: #e7e7e7;
+  color: #000000;
 }
 
 .tabbing.nav-pills>li>a.active {
