@@ -18,9 +18,9 @@
     <% end %>
 
     <% if @result.agents && Array(@result.agents['creator']).length > 0 %>
-      <% a_direct_creator = @result.agents['creator'].reject{|r| r['_inherited'].sort { |a, b| a <=> b }} %>
+      <% a_direct_creator = @result.agents['creator'].reject{|r| r['_inherited']} %>
       <% unless a_direct_creator.empty? %>
-        <%= render partial: 'shared/agents_list', locals: {:list => {'creator' => a_direct_creator}} %>
+        <%= render partial: 'shared/agents_list', locals: {:list => {'creator' => a_direct_creator.sort}} %>
       <% end %>
     <% end %>
 
