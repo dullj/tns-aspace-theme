@@ -1,11 +1,12 @@
 h1 {
-  color: #e42a1d;
-  font-family: neue display random;
+  color: #000000;
+  font-family: neue display;
   font-size: 1.5rem;
 }
 
 h2 {
   font-family: neue;
+  color: #000000;
 }
 
 h3 {
@@ -38,6 +39,13 @@ a:hover {
 
 #site-title {
   font-size: 35px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+#asc-title {
+  font-family: neue display random;
+  color: #e42a1d;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -53,14 +61,12 @@ a:hover {
     color: #e42a1d;
 }
 
-@media (min-width: 768px) 
-  .navbar-nav {
+.navbar-nav {
     float: right;
 }
 
 #header .logo {
   display: none;
-;
 }
 
 .top-bar {
@@ -132,21 +138,53 @@ nav nav navbar-nav {
   font-family: neue;
 }
 
-.abstract single_note {
+.single_note {
   padding-top: 15px;
-  padding-bottom: 15px;
-  line-height: 25px;
+  line-height: 22px;
 }
 
 .dates {
   padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .identifier .id-label {
-    font-family: neue;
+  font-family: neue;
 }
 
 .recordrow {
   padding: 20px;
+}
+
+.more-facets .btn {
+  color: #000000;
+}
+
+/* SUBJECTS */
+
+.record-type-badge.subject {
+  color: #000000;
+  border-color: #000000;
+}
+
+/* COLLECTION PAGE */
+
+.breadcrumb * a {
+   color: #000000;
+}
+
+.breadcrumb {
+  background-color: #000000;
+}
+
+.tabbing.nav-pills>li>a.active {
+  background-color: #e7e7e7;
+  color: #000000;
+}
+
+.tabbing.nav-pills>li>a {
+  background-color: DARKGRAY;
+}
+
+.subnote {
+  padding-left: 0px;
 }

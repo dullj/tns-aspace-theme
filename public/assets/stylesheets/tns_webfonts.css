@@ -3,9 +3,8 @@
   src: url('../webfonts/neue-regular.eot');
   src: url('../webfonts/neue-regular.eot#iefix') format('embedded-opentype'),
     url('../webfonts/neue-regular.woff') format('woff'),
+    url('../webfonts/neue-regular.otf') format('opentype'),
     url('../webfonts/neue-regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
@@ -20,9 +19,8 @@
   src: url('../webfonts/neue-black.eot');
   src: url('../webfonts/neue-black.eot#iefix') format('embedded-opentype'),
     url('../webfonts/neue-black.woff') format('woff'),
+    url('../webfonts/neue-black.otf') format('opentype'),
     url('../webfonts/neue-black.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
