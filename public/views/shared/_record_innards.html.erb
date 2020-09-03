@@ -5,7 +5,7 @@
     <% over = @result.note('abstract') %>
     <% if over.blank?
        over = @result.note('scopecontent')
-       folder.shift # remove abstract from in-folder notes
+       folder.shift # remove scopecontent from in-folder notes
 
     end %>
     <% unless over.blank? %>
