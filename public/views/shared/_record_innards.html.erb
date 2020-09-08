@@ -1,6 +1,9 @@
 <!-- Look for '_inherited' and '*_inherited' properties -->
 <% non_folder = %w(summary langmaterial accessrestrict userestrict bioghist) %>
 <% folder = %w(abstract arrangement phystech physloc otherfindaid custodhist acqinfo appraisal accruals originalsloc altformavail extent relatedmaterial separatedmaterial note_bibliography materialspec physdesc inscription physfacet dimensions edition fileplan legalstatus odd note processinfo note_index) %>
+
+<%= debug @result %>
+
 <div class="upper-record-details">
     <% over = @result.note('scopecontent') %>
     <% if over.blank?
@@ -20,7 +23,6 @@
     <% if @result.agents && Array(@result.agents['creator']).length > 0 %>
       <% a_direct_creator = @result.agents['creator'].reject{|r| r['_inherited']} %>
       <% unless a_direct_creator.empty? %>
-        <% a_direct_creator = a_direct_creator.sort_by { |_,v| v['title']}.to_h %>
         <%= render partial: 'shared/agents_list', locals: {:list => {'creator' => a_direct_creator}} %>
       <% end %>
     <% end %>
