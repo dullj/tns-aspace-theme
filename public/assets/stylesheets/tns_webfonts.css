@@ -1,11 +1,15 @@
 @font-face {
   font-family: 'neue-regular';
-  src: url('../webfonts/neue-regular.eot');
-  src: url('../webfonts/neue-regular.eot#iefix') format('embedded-opentype'),
-    url('../webfonts/neue-regular.woff') format('woff'),
+  src: url('../webfonts/neue-regular.eot?') format('eot'), 
+    url('../webfonts/neue-regular.woff') format('woff'), 
     url('../webfonts/neue-regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+}
+
+@font-face {
+  font-family: 'neue-black';
+  src: url('../webfonts/neue-black.eot?') format('eot'), 
+    url('../webfonts/neue-black.woff') format('woff'), 
+    url('../webfonts/neue-black.ttf') format('truetype');
 }
 
 @font-face {
@@ -16,18 +20,8 @@
 }
 
 @font-face {
-  font-family: 'Neue-Black';
-  src: url('../webfonts/neue-black.eot');
-  src: url('../webfonts/neue-black.eot#iefix') format('embedded-opentype'),
-    url('../webfonts/neue-black.woff') format('woff'),
-    url('../webfonts/neue-black.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
 font-family: 'neue-display';
+src: url('../webfonts/neuedisplay-black.woff') format('woff');
 font-weight: 400;
 font-style: normal;
-src: url('../webfonts/neuedisplay-black.woff') format('woff');
 }
