@@ -1,15 +1,15 @@
 <!-- Look for '_inherited' and '*_inherited' properties -->
 <% non_folder = %w(summary langmaterial accessrestrict userestrict bioghist) %>
-<% folder = %w(abstract arrangement phystech physloc otherfindaid custodhist acqinfo appraisal accruals originalsloc altformavail extent relatedmaterial separatedmaterial note_bibliography materialspec physdesc inscription physfacet dimensions edition fileplan legalstatus odd note processinfo note_index) %>
+<% folder = %w(scopecontent arrangement phystech physloc otherfindaid custodhist acqinfo appraisal accruals originalsloc altformavail extent relatedmaterial separatedmaterial note_bibliography materialspec physdesc inscription physfacet dimensions edition fileplan legalstatus odd note processinfo note_index) %>
 <div class="upper-record-details">
-    <% over = @result.note('scopecontent') %>
+    <% over = @result.note('abstract') %>
     <% if over.blank?
-       over = @result.note('abstract')
-       folder.shift # remove abstract from in-folder notes
+       over = @result.note('scopecontent')
+       folder.shift # remove scopecontent from in-folder notes
 
     end %>
     <% unless over.blank? %>
-      <%= render partial: 'shared/single_note', locals: {:type => 'abstract', :note_struct => over} %>
+      <%= render partial: 'shared/single_note', locals: {:type => 'scopecontent', :note_struct => over} %>
     <% end %>
 
     <% unless @result.dates.blank? %>
@@ -18,8 +18,9 @@
     <% end %>
 
     <% if @result.agents && Array(@result.agents['creator']).length > 0 %>
-      <% a_direct_creator = @result.agents['creator'].reject{|r| r['_inherited']}.take(1) %>
+      <% a_direct_creator = @result.agents['creator'].reject{|r| r['_inherited']} # display all creators %>
       <% unless a_direct_creator.empty? %>
+        <% a_direct_creator = a_direct_creator.sort_by { |hsh| hsh['_resolved']['title'] }  # sort creators alphabetically by last name %>
         <%= render partial: 'shared/agents_list', locals: {:list => {'creator' => a_direct_creator}} %>
       <% end %>
     <% end %>
@@ -108,11 +109,6 @@
 	 <% x = render partial: 'shared/present_list_external_docs', locals: {:list =>  @result.external_documents, :list_clss => 'external_docs'} %>
 	  <%= render partial: 'shared/accordion_panel', locals: {:p_title => t('external_docs'), :p_id => 'ext_doc_list', :p_body => x} %>
 	<% end %>
-	<% unless @repo_info.blank? || @repo_info['top']['name'].blank? %>
-           <% x= render partial: 'repositories/repository_details' %>
-	    <%= render partial: 'shared/accordion_panel', locals: {:p_title =>  t('repository.details'),
-	    :p_id => 'repo_deets', :p_body => x} %>
-        <% end %>
         <% if @result.kind_of?(Resource) && !@result.related_accessions.blank? %>
           <% x = render partial: 'resources/related_accessions', locals: {:accessions => @result.related_accessions} %>
           <%= render partial: 'shared/accordion_panel', locals: {:p_title => t('related_accessions'), :p_id => 'related_accessions_list', :p_body => x} %>
