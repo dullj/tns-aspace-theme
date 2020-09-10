@@ -56,6 +56,14 @@ a:visited {
   margin-top: 10px;
 }
 
+#archives-home {
+    font-family: neue;
+    font-size: 11pt;
+    text-align: left;
+    padding-top: 15px;
+    color: gray;
+}
+
 .navbar-default .navbar-nav>li>a {
   color: #767676;
   text-transform: uppercase;
