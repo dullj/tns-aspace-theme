@@ -16,7 +16,7 @@ h3 {
   font-weight: bold;
 }
 
-h1, .h1, h2, .h2, h3, .h3 {
+h1, .h1, h2, .h2, .h3 {
   margin-bottom: 20px;
 }
 
@@ -40,29 +40,33 @@ a:hover {
 #site-title {
   font-size: 35px;
   color: #000000;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  margin-top: 30px;
 }
 
 #asc-title {
   font-family: neue display random;
   color: #e42a1d;
+  margin-top: 10px;
 }
 
 .navbar-default .navbar-nav>li>a {
   color: #767676;
   text-transform: uppercase;
   font-size: 12px !important;
-  font-family: neue-black;
+  font-family: neue;
   letter-spacing: .05rem;
   text-decoration: underline;
+  font-weight: bold;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    color: #e42a1d;
+  color: #e42a1d;
 }
 
 .navbar-nav {
-    float: right;
+  float: right;
+  border-bottom: solid 2px #767676;
 }
 
 #header .logo {
@@ -80,7 +84,7 @@ a:hover {
 }
 
 .row welcome-text {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .navbar-default {
@@ -93,6 +97,15 @@ nav nav navbar-nav {
   
 
 /* BUTTONS */
+
+.tabbing nav nav-pills {
+  font-family: neue;
+  font-size: 12px;
+}
+
+.tabbing.nav-pills > li > a:hover {
+  text-decoration: underline;
+}
 
 .btn-primary {
   font-family: neue;
@@ -120,7 +133,6 @@ nav nav navbar-nav {
 
 .search {
   padding-bottom: 30px;
-  border-bottom: solid 1px;
 }
 
 /* RESULTS DISPLAY */
@@ -140,14 +152,16 @@ nav nav navbar-nav {
 
 .single_note {
   padding-top: 15px;
+  padding-bottom: 15px;
   line-height: 22px;
-}
-
-.dates {
-  padding-top: 15px;
+  font-family: neue;
 }
 
 .identifier .id-label {
+  font-family: neue;
+}
+
+.badge-and-identifier .identifier {
   font-family: neue;
 }
 
@@ -168,12 +182,17 @@ nav nav navbar-nav {
 
 /* COLLECTION PAGE */
 
+.breadcrumb * a:hover {
+  color: #e7e7e7;
+}
+
 .breadcrumb * a {
-   color: #ffffff;
+  color: #000000;
+  text-decoration: underline;
 }
 
 .breadcrumb {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .tabbing.nav-pills>li>a.hover {
@@ -192,4 +211,45 @@ nav nav navbar-nav {
 
 .subnote {
   padding-left: 0px;
+  font-family: neue;
+}
+
+/* REPOSITORY PAGE */
+
+.contact_info {
+  margin-top: 15px;
+  font-family: neue;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.clear {
+  font-family: neue;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.record-type-badge.repository {
+  font-family: neue;
+  color: #767676;
+}
+
+.record-type-badge.digital_object {
+  font-family: neue;
+  color: #767676;
+}
+
+.record-type-badge.subject {
+  font-family: neue;
+  color: #767676;
+}
+
+.record-type-badge.agent {
+  font-family: neue;
+  color: #767676;
+}  
+
+.record-title {
+  font-family: neue;
+  font-size: 12px;
 }
