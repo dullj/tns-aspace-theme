@@ -1,10 +1,10 @@
 h1 {
   color: #000000;
-  font-family: neue display;
+  font-family: neue;
   font-size: 1.5rem;
 }
 
-h2 {
+h2, h4 {
   font-family: neue;
   color: #000000;
 }
@@ -14,6 +14,7 @@ h3 {
   font-family: neue;
   font-size: 20px;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 h1, .h1, h2, .h2, .h3 {
@@ -31,6 +32,11 @@ a {
 }  
 
 a:hover {
+  color: #e42a1d;
+  text-decoration: underline;
+}
+
+a:visited {
   color: #e42a1d;
   text-decoration: underline;
 }
@@ -56,17 +62,20 @@ a:hover {
   font-size: 12px !important;
   font-family: neue;
   letter-spacing: .05rem;
-  text-decoration: underline;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
   color: #e42a1d;
 }
 
+.navbar-default .navbar-nav>li>a:visited {
+  color: #e42a1d;
+}
+
 .navbar-nav {
   float: right;
-  border-bottom: solid 2px #767676;
+  border-bottom: solid 1px #767676;
 }
 
 #header .logo {
@@ -76,6 +85,7 @@ a:hover {
 .top-bar {
   border-bottom: 0;
   border-top: 0;
+  background-color: #ffffff !important;
 }  
 
 #header>.row {
@@ -118,6 +128,10 @@ nav nav navbar-nav {
   text-transform: uppercase;
   background-color: #f2f2f2;
   border-color: #767676;
+}
+
+.more-facets .btn {
+  font-family: neue; 
 }
 
 .pagination>.active>a, .pagination>.active>a:hover, .pagination>.active>a:focus, .pagination>.active>span, .pagination>.active>span:hover, .pagination>.active>span:focus {
@@ -214,6 +228,25 @@ nav nav navbar-nav {
   font-family: neue;
 }
 
+blockquote {
+    padding: 20px 20px;
+    margin: 0;
+}
+
+dt {
+  padding-top: 10px;
+}
+
+dt, dd {
+  line-height: 22px;
+  font-family: neue;
+  font-size: 14px;
+}
+
+dd {
+  padding-top: 5px;
+}
+
 /* REPOSITORY PAGE */
 
 .contact_info {
@@ -225,7 +258,7 @@ nav nav navbar-nav {
 
 .clear {
   font-family: neue;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
 }
 
@@ -251,5 +284,5 @@ nav nav navbar-nav {
 
 .record-title {
   font-family: neue;
-  font-size: 12px;
+  font-size: 16px;
 }
