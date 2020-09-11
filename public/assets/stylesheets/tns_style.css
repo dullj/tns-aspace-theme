@@ -41,11 +41,6 @@ a:active {
   text-decoration: underline;
 }
 
-a:visited {
-  color: #767676;
-  text-decoration: underline;
-}
-
 /* HEADER */
 
 #site-title {
@@ -321,6 +316,11 @@ dd {
   font-size: 14px;
 }
 
+.present_list agents_list {
+    font-family: neue;
+    padding-bottom: 15px;
+}
+
 /* FOOTER */
 
 .row-tns-footer {
@@ -337,3 +337,8 @@ dd {
   padding-bottom: 20px;
   padding-top: 30px;
 }
+
+.container-fluid footer {
+  background-color: #f2f2f2;
+}
+
