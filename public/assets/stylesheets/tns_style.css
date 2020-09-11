@@ -36,8 +36,13 @@ a:hover {
   text-decoration: underline;
 }
 
-a:visited {
+a:active {
   color: #e42a1d;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #767676;
   text-decoration: underline;
 }
 
@@ -71,6 +76,11 @@ a:visited {
   font-family: neue;
   letter-spacing: .05rem;
   font-weight: 800;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -173,10 +183,17 @@ nav nav navbar-nav {
 }
 
 .single_note {
-  padding-top: 15px;
   padding-bottom: 15px;
   line-height: 22px;
   font-family: neue;
+}
+
+.present_list agents_list {
+  padding-bottom: 15px;
+}
+
+.dates-is-single-date {
+  padding-bottom: 15px;
 }
 
 .identifier .id-label {
@@ -255,6 +272,14 @@ dd {
   padding-top: 5px;
 }
 
+.extent {
+  padding-bottom: 15px;
+}
+
+.dates {
+  font-family: neue;
+}
+
 /* REPOSITORY PAGE */
 
 .contact_info {
@@ -291,6 +316,7 @@ dd {
 }  
 
 .record-title {
+  line-height: 22px;
   font-family: neue;
-  font-size: 16px;
+  font-size: 14px;
 }
