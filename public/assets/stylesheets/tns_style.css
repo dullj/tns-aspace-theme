@@ -59,7 +59,7 @@ a:active {
 #archives-home {
     font-family: neue;
     font-size: 11pt;
-    text-align: left;
+    text-align: right;
     padding-top: 15px;
     color: gray;
 }
@@ -212,6 +212,11 @@ nav nav navbar-nav {
 .record-type-badge.subject {
   color: #000000;
   border-color: #000000;
+}
+
+.record-type-badge.archival_object {
+  color: #000000;
+  border-color: #ffffff;
 }
 
 /* COLLECTION PAGE */
