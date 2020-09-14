@@ -41,11 +41,6 @@ a:active {
   text-decoration: underline;
 }
 
-a:visited {
-  color: #767676;
-  text-decoration: underline;
-}
-
 /* HEADER */
 
 #site-title {
@@ -64,7 +59,7 @@ a:visited {
 #archives-home {
     font-family: neue;
     font-size: 11pt;
-    text-align: left;
+    text-align: right;
     padding-top: 15px;
     color: gray;
 }
@@ -219,6 +214,11 @@ nav nav navbar-nav {
   border-color: #000000;
 }
 
+.record-type-badge.archival_object {
+  color: #000000;
+  border-color: #ffffff;
+}
+
 /* COLLECTION PAGE */
 
 .breadcrumb * a:hover {
@@ -321,6 +321,11 @@ dd {
   font-size: 14px;
 }
 
+.present_list agents_list {
+    font-family: neue;
+    padding-bottom: 15px;
+}
+
 /* FOOTER */
 
 .row-tns-footer {
@@ -337,3 +342,8 @@ dd {
   padding-bottom: 20px;
   padding-top: 30px;
 }
+
+.container-fluid footer {
+  background-color: #f2f2f2;
+}
+
