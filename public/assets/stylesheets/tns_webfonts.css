@@ -46,6 +46,18 @@
     text-rendering: optimizeLegibility;
 }
 
+/* Webfont: Neue-BoldItalic */@font-face {
+    font-family: 'NeueBold';
+    src: url('../webfonts/Neue_Bold/Neue-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('../webfonts/Neue_Bold/Neue-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../webfonts/Neue_Bold/Neue-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('../webfonts/Neue_Bold/Neue-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../webfonts/Neue_Bold/Neue-BoldItalic.svg#Neue-BoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
 /* Webfont: NeueDisplay-Black */@font-face {
     font-family: 'NeueDisplayBlack';
     src: url('../webfonts/NeueDisplay-Black/NeueDisplay-Black.eot'); /* IE9 Compat Modes */
