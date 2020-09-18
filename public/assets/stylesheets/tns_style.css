@@ -82,8 +82,9 @@ a:active {
   color: #e42a1d;
 }
 
-.navbar-default .navbar-nav>li>a:visited {
+.navbar-default .navbar-nav>li>a:active {
   color: #e42a1d;
+  text-decoration: underline;
 }
 
 .navbar-nav {
@@ -124,6 +125,10 @@ nav nav navbar-nav {
 .tabbing nav nav-pills {
   font-family: neue;
   font-size: 12px;
+}
+
+.tabbing {
+  font-family: neue;
 }
 
 .tabbing.nav-pills > li > a:hover {
@@ -185,6 +190,7 @@ nav nav navbar-nav {
 
 .present_list agents_list {
   padding-bottom: 15px;
+  font-family: neue;
 }
 
 .dates-is-single-date {
@@ -254,8 +260,9 @@ nav nav navbar-nav {
 }
 
 blockquote {
-    padding: 20px 20px;
-    margin: 0;
+  padding: 20px 20px;
+  margin: 0;
+  font-size: 14px;
 }
 
 dt {
@@ -324,6 +331,10 @@ dd {
 .present_list agents_list {
     font-family: neue;
     padding-bottom: 15px;
+}
+
+.accessrestrict {
+  padding-top: 15px;
 }
 
 /* FOOTER */
