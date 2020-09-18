@@ -45,13 +45,14 @@ a:active {
 
 #site-title {
   font-size: 35px;
+  font-family: neue bold, neuebold;
   color: #000000;
   margin-bottom: 5px;
   margin-top: 30px;
 }
 
 #asc-title {
-  font-family: neue display random;
+  font-family: neuedisplayblack, neue display black;
   color: #e42a1d;
   margin-top: 10px;
 }
@@ -68,9 +69,8 @@ a:active {
   color: #767676;
   text-transform: uppercase;
   font-size: 12px !important;
-  font-family: neue;
+  font-family: neuedisplayblack, neue display black;
   letter-spacing: .05rem;
-  font-weight: 800;
 }
 
 .navbar-default {
@@ -82,8 +82,9 @@ a:active {
   color: #e42a1d;
 }
 
-.navbar-default .navbar-nav>li>a:visited {
+.navbar-default .navbar-nav>li>a:active {
   color: #e42a1d;
+  text-decoration: underline;
 }
 
 .navbar-nav {
@@ -124,6 +125,10 @@ nav nav navbar-nav {
 .tabbing nav nav-pills {
   font-family: neue;
   font-size: 12px;
+}
+
+.tabbing {
+  font-family: neue;
 }
 
 .tabbing.nav-pills > li > a:hover {
@@ -185,6 +190,7 @@ nav nav navbar-nav {
 
 .present_list agents_list {
   padding-bottom: 15px;
+  font-family: neue;
 }
 
 .dates-is-single-date {
@@ -254,8 +260,9 @@ nav nav navbar-nav {
 }
 
 blockquote {
-    padding: 20px 20px;
-    margin: 0;
+  padding: 20px 20px;
+  margin: 0;
+  font-size: 14px;
 }
 
 dt {
@@ -316,14 +323,18 @@ dd {
 }  
 
 .record-title {
-  line-height: 22px;
+  line-height: 30px;
   font-family: neue;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .present_list agents_list {
     font-family: neue;
     padding-bottom: 15px;
+}
+
+.accessrestrict {
+  padding-top: 15px;
 }
 
 /* FOOTER */
