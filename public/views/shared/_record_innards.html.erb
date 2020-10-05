@@ -82,11 +82,6 @@
     <%= render partial: 'shared/accordion_panel', locals: {:p_title =>  t('classification._plural'),
                                                            :p_id => 'classifications_list', :p_body => x} %>
   <% end %>
-	<% unless @result.agents.blank? %>
-	  <% x= render partial: 'shared/agents_list', locals: {:list => @result.agents} %>
-	   <%= render partial: 'shared/accordion_panel', locals: {:p_title =>  t('pui_agent.related'),
-	     :p_id => 'agent_list', :p_body => x} %>
-        <% end %>
 	<% unless @result.linked_digital_objects.blank? %>
 		<% x = render partial: 'resources/linked_digital_objects', locals: {:digital_objects => @result.linked_digital_objects} %>
 		<%= render partial: 'shared/accordion_panel', locals: {:p_title => t('linked_digital_objects'), :p_id => 'linked_digital_objects_list', :p_body => x} %>
