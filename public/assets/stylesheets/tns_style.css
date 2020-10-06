@@ -66,11 +66,12 @@ a:active {
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #767676;
-  text-transform: uppercase;
+  color: #ffffff;
   font-size: 12px !important;
   font-family: neuedisplayblack, neue display black;
   letter-spacing: .05rem;
+  border: solid 1px #767676;
+  border-radius: 5px;
 }
 
 .navbar-default {
@@ -89,6 +90,14 @@ a:active {
 
 .navbar-nav {
   float: right;
+}
+
+.navbar-nav>li {
+  padding-left: 10px;
+  padding-bottom: 25px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-bottom: solid 1px #767676;
 }
 
@@ -345,11 +354,9 @@ dd {
 
 .footer-links-list {
   list-style: none;
-  text-align: center;
   font-family: neue;
-  text-transform: uppercase;
   font-weight: 800;
-  color: black;
+  color: #ffffff;
   padding-bottom: 20px;
   padding-top: 30px;
 }
