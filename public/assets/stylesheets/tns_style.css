@@ -334,10 +334,15 @@ dd {
 .record-title {
   line-height: 30px;
   font-family: neue;
-  font-size: 18px;
+  font-size: 15px;
 }
 
-.present_list agents_list {
+.present_list {
+    font-family: neue;
+    padding-bottom: 15px;
+}
+
+.agents_list {
     font-family: neue;
     padding-bottom: 15px;
 }
@@ -356,7 +361,7 @@ dd {
   list-style: none;
   font-family: neue;
   font-weight: 800;
-  color: #ffffff;
+  color: #000000;
   padding-bottom: 20px;
   padding-top: 30px;
 }
