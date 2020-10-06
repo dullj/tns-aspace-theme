@@ -66,12 +66,13 @@ a:active {
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #ffffff;
+  color: #767676;
   font-size: 12px !important;
   font-family: neuedisplayblack, neue display black;
   letter-spacing: .05rem;
   border: solid 1px #767676;
   border-radius: 5px;
+  background-color: #f2f2f2;
 }
 
 .navbar-default {
@@ -361,12 +362,12 @@ dd {
   list-style: none;
   font-family: neue;
   font-weight: 800;
-  color: #000000;
+  color: #ffffff;
   padding-bottom: 20px;
   padding-top: 30px;
 }
 
-.container-fluid footer {
-  background-color: #f2f2f2;
+.container-fluid.footer {
+  background-color: #000000;
 }
 
