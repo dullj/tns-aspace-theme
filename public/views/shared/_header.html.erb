@@ -1,44 +1,48 @@
 <section  id="header">
   <div class="row">
     
-    <div class="col-12" id="covidnotice">
-      <h5>COVID-19 Notice</h5>
-          <p>The New School Archives and Special Collections is physically closed until further notice. We are currently offering virtual research services and access to our <a href="http://digitalarchives.library.newschool.edu/">digital collections</a> online. Please reach out to <a href="mailto:archivist@newschool.edu">archivist@newschool.edu</a> with questions.</p>
+    <div class="container-fluid" style="background-color:#ffe000;">
+      <div class="col-12">
+        <h5>COVID-19 Notice</h5>
+        <p>The New School Archives and Special Collections is physically closed until further notice. We are currently offering 		virtual research services and   access to our <a href="http://digitalarchives.library.newschool.edu/">digital 					collections</a> online. Please reach out to <a href="mailto:archivist@newschool.edu">archivist@newschool.edu</a> with 			questions.</p>
+      </div>
     </div>
     
-    <div class="col-sm-6">
-      <ul>
-        <li>
-          <a href="https://www.newschool.edu/">University Home</a>
-        </li>
-        <li>
-          <a href="https://www.kellenarchives.com/">Archives Home</a>
-        </li>
-      </ul>
-    </div>
-    
-    <div class="col-sm-6">
-      <ul>
-        <li>
-          Collection Guides
-        </li>
-        <li>
-          <a href="https://www.digitalarchives.library.newschool.edu/">Digital Collections</a>
-        </li>
-      </ul>
+    <div class="row" style="background-color:black;">
+      <div class="col-xs-6">
+        <ul class="clearfix menu">
+            <li class="menu-item">
+              <a href="https://www.newschool.edu/">University Home</a>
+            </li>
+            <li class="menu-item">
+              <a href="https://www.kellenarchives.com/">Archives Home</a>
+            </li>
+        </ul>
+      </div>
+  
+      <div class="col-xs-6">
+        <ul class="clearfix menu">
+            <li class="menu-item">
+              Collection Guides
+            </li>
+            <li class="menu-item">
+              <a href="https://www.digitalarchives.library.newschool.edu/">Digital Collections</a>
+            </li>
+          </ul>
+      </div>
     </div>
     
     <div>
-    <h2 id="site-title">Collection Guides</h2>
-      <h1 id="asc-title">
-        <% unless request.original_fullpath == '/' %>
-          <a title="<%=t('brand.title_link_text') %>" href="<%= AppConfig[:public_proxy_url] %>">
-        <% end %>
-        <%= t('brand.title') %>
-        <% unless request.original_fullpath == '/' %>
-          </a>
-        <% end %>
-      </h1>
+      <h2 id="site-title">Collection Guides</h2>
+        <h1 id="asc-title">
+          <% unless request.original_fullpath == '/' %>
+            <a title="<%=t('brand.title_link_text') %>" href="<%= AppConfig[:public_proxy_url] %>">
+          <% end %>
+          <%= t('brand.title') %>
+          <% unless request.original_fullpath == '/' %>
+            </a>
+          <% end %>
+        </h1>
     </div>
     
     <div class="col-sm-3 hidden-xs"><img class="logo" src="<%= asset_path(AppConfig[:pui_branding_img]) %>" alt="" /></div>
