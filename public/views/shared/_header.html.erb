@@ -1,8 +1,35 @@
 <section  id="header">
   <div class="row">
-    <div class="col-sm-12">
-      <h4 id="archives-home"><a href="http://kellenarchives.com/">Return to Archives Home</a></h4>
-      <h2 id="site-title">Collection Guides</h2>
+    
+    <div class="col-12" id="covidnotice">
+      <h5>COVID-19 Notice</h5>
+          <p>The New School Archives and Special Collections is physically closed until further notice. We are currently offering virtual research services and access to our <a href="http://digitalarchives.library.newschool.edu/">digital collections</a> online. Please reach out to <a href="mailto:archivist@newschool.edu">archivist@newschool.edu</a> with questions.</p>
+    </div>
+    
+    <div class="col-sm-6">
+      <ul>
+        <li>
+          <a href="https://www.newschool.edu/">University Home</a>
+        </li>
+        <li>
+          <a href="https://www.kellenarchives.com/">Archives Home</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="col-sm-6">
+      <ul>
+        <li>
+          Collection Guides
+        </li>
+        <li>
+          <a href="https://www.digitalarchives.library.newschool.edu/">Digital Collections</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div>
+    <h2 id="site-title">Collection Guides</h2>
       <h1 id="asc-title">
         <% unless request.original_fullpath == '/' %>
           <a title="<%=t('brand.title_link_text') %>" href="<%= AppConfig[:public_proxy_url] %>">
@@ -13,6 +40,8 @@
         <% end %>
       </h1>
     </div>
+    
     <div class="col-sm-3 hidden-xs"><img class="logo" src="<%= asset_path(AppConfig[:pui_branding_img]) %>" alt="" /></div>
+  
   </div>
 </section>
