@@ -128,7 +128,30 @@ a:active {
 nav nav navbar-nav {
   float: right;
 }
-  
+
+.menu-item {
+  display: inline; 
+}
+
+.menu-item a {
+  color: #ffffff;
+}
+
+.clearfix-menu {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  font-family: neue;
+  text-transform: uppercase;
+}
+
+.header-first.li {
+  padding-right: 10px;
+}
+
+.header-second {
+  text-align: right;
+}
 
 /* BUTTONS */
 
