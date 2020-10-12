@@ -119,6 +119,7 @@ a:active {
 
 .row welcome-text {
   padding-top: 10px;
+  padding-bottom: 15px;
 }
 
 .navbar-default {
@@ -139,18 +140,29 @@ nav nav navbar-nav {
 
 .clearfix-menu {
   list-style-type: none;
-  padding: 0;
+  padding-left: 0px;
+  padding-top: 5px;
   overflow: hidden;
-  font-family: neue;
+  font-family: neuedisplayblack, neue display black;
   text-transform: uppercase;
+  font-size: 12px;
 }
 
-.header-first.li {
+.header-first li {
   padding-right: 10px;
 }
 
 .header-second {
   text-align: right;
+}
+
+.covidnotice {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+#header>.row {
+  padding-right: 0;
 }
 
 /* BUTTONS */
@@ -388,6 +400,7 @@ dd {
   color: #ffffff;
   padding-bottom: 20px;
   padding-top: 30px;
+  padding-left: 0;
 }
 
 .container-fluid.footer {
