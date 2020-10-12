@@ -119,6 +119,7 @@ a:active {
 
 .row welcome-text {
   padding-top: 10px;
+  padding-bottom: 15px;
 }
 
 .navbar-default {
@@ -399,6 +400,7 @@ dd {
   color: #ffffff;
   padding-bottom: 20px;
   padding-top: 30px;
+  padding-left: 0;
 }
 
 .container-fluid.footer {
