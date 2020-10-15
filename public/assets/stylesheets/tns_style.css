@@ -76,7 +76,6 @@ a:active {
 }
 
 .navbar-default {
-    background-color: #ffffff;
     border-color: #ffffff;
 }
 
@@ -87,10 +86,6 @@ a:active {
 .navbar-default .navbar-nav>li>a:active {
   color: #e42a1d;
   text-decoration: underline;
-}
-
-.navbar-nav {
-  float: right;
 }
 
 .navbar-nav>li {
@@ -120,14 +115,6 @@ a:active {
 .row welcome-text {
   padding-top: 10px;
   padding-bottom: 15px;
-}
-
-.navbar-default {
-  background-color: #eeeeee;
-}
-
-nav nav navbar-nav {
-  float: right;
 }
 
 .menu-item {
@@ -405,5 +392,6 @@ dd {
 
 .container-fluid.footer {
   background-color: #000000;
+  margin-top: 20px;
 }
 
