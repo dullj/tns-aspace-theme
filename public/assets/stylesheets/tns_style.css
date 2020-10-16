@@ -47,6 +47,10 @@ a:active {
   text-decoration: underline;
 }
 
+hr {
+  border-top: 1px solid #000000;
+}
+
 /* HEADER */
 
 #site-title {
@@ -76,9 +80,6 @@ a:active {
   font-size: 12px !important;
   font-family: neuedisplayblack, neue display black;
   letter-spacing: .05rem;
-  border: solid 1px #767676;
-  border-radius: 5px;
-  background-color: #f2f2f2;
 }
 
 .navbar-default {
@@ -92,15 +93,6 @@ a:active {
 .navbar-default .navbar-nav>li>a:active {
   color: #e42a1d;
   text-decoration: underline;
-}
-
-.navbar-nav>li {
-  padding-left: 10px;
-  padding-bottom: 25px;
-}
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  border-bottom: solid 1px #767676;
 }
 
 #header .logo {
@@ -379,10 +371,6 @@ dd {
 }
 
 /* FOOTER */
-
-.row-tns-footer {
-  background-color: #f2f2f2;
-}
 
 .footer-links-list {
   list-style: none;
