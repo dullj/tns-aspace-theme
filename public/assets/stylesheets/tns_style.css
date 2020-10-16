@@ -47,6 +47,10 @@ a:active {
   text-decoration: underline;
 }
 
+hr {
+  border-top: 1px solid #000000;
+}
+
 /* HEADER */
 
 #site-title {
@@ -379,10 +383,6 @@ dd {
 }
 
 /* FOOTER */
-
-.row-tns-footer {
-  background-color: #f2f2f2;
-}
 
 .footer-links-list {
   list-style: none;
