@@ -276,10 +276,6 @@ a:active {
   text-decoration: underline;
 }
 
-.breadcrumb {
-  background-color: #ffffff;
-}
-
 .tabbing.nav-pills>li>a.hover {
   background-color: #e7e7e7;
   color: #000000;
