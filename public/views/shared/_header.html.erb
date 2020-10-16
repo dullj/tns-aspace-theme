@@ -2,7 +2,7 @@
   <div class="row" id="covidnotice" style="background-color:#ffe000;">
     <div class="container-fluid">
       <div class="col-12">
-        <h4>COVID-19 Notice</h4>
+        <h5>COVID-19 Notice</h5>
         <p>The New School Archives and Special Collections is physically closed until further notice. We are currently offering virtual research services and   access to our <a href="http://digitalarchives.library.newschool.edu/">digital 					collections</a> online. Please reach out to <a href="mailto:archivist@newschool.edu">archivist@newschool.edu</a> with 			questions.</p>
       </div>
     </div>
@@ -28,7 +28,7 @@
           <li class="menu-item" style="color:#8c8c8c;">
                 Collection Guides
           </li>
-          <li class="menu-item" style="padding-right: 10px;">
+          <li class="menu-item">
               <a href="https://www.digitalarchives.library.newschool.edu/">Digital Collections</a>
           </li>
         </ul>
@@ -37,7 +37,7 @@
   </div>
     
   <div class="row">
-      <h2 id="site-title">Collection Guides</h2>
+    <div class="col-12">
       <h1 id="asc-title">
           <% unless request.original_fullpath == '/' %>
             <a title="<%=t('brand.title_link_text') %>" href="<%= AppConfig[:public_proxy_url] %>">
@@ -47,8 +47,10 @@
             </a>
           <% end %>
       </h1>
+      <h2 id="site-title">Collection Guides</h2>
+    </div>
   </div>
     
-  <div class="col-sm-3 hidden-xs"><img class="logo" src="<%= asset_path(AppConfig[:pui_branding_img]) %>" alt="" /></div>
+  <div class="col-sm-3 hidden-xs"><img class="logo" src="Archives_Logo_RGB_2x.png" alt="archives logo" /></div>
   
 </section>
