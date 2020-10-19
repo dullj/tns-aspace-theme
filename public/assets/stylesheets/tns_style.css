@@ -147,9 +147,9 @@ hr {
   padding-left: 10px;
 }
 
-.covidnotice {
-  padding-top: 15px;
-  padding-bottom: 5px;
+#covidnotice {
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
 /* BUTTONS */
