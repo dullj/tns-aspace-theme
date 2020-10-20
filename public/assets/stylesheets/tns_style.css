@@ -65,6 +65,7 @@ hr {
   font-family: neuedisplayblack, neue display black;
   color: #e42a1d;
   margin-top: 10px;
+  display: none;
 }
 
 #archives-home {
@@ -93,10 +94,6 @@ hr {
 .navbar-default .navbar-nav>li>a:active {
   color: #e42a1d;
   text-decoration: underline;
-}
-
-#header .logo {
-  display: none;
 }
 
 .top-bar {
