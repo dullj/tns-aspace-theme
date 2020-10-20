@@ -203,7 +203,8 @@ hr {
 /* HOMEPAGE SEARCH */
 
 .search {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+  padding-top: 20px;
 }
 
 /* RESULTS DISPLAY */
