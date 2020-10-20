@@ -53,11 +53,21 @@ hr {
 
 /* HEADER */
 
+#header .logo {
+  display: none;
+}
+
 #site-title {
-  font-size: 35px;
+  font-size: 30px;
   font-family: neue bold, neuebold;
   color: #000000;
   margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+#fullsitetitle {
+  font-family: neuedisplayblack, neue display black;
+  margin-bottom: 0;
   margin-top: 30px;
 }
 
@@ -193,7 +203,8 @@ hr {
 /* HOMEPAGE SEARCH */
 
 .search {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+  padding-top: 20px;
 }
 
 /* RESULTS DISPLAY */
