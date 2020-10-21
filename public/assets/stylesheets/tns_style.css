@@ -169,6 +169,12 @@ hr {
   padding-right: 85px;
 }
 
+/* HOMEPAGE */
+
+.frontmatter h4 {
+  padding-top: 15px;
+}
+
 /* BUTTONS */
 
 .tabbing nav nav-pills {
@@ -376,7 +382,6 @@ dd {
 .record-title {
   line-height: 30px;
   font-family: neue;
-  font-size: 15px;
 }
 
 .present_list {
