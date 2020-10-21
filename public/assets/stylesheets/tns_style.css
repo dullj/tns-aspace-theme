@@ -384,10 +384,18 @@ dd {
   list-style: none;
   font-family: neue;
   font-weight: 800;
-  color: #ffffff;
   padding-bottom: 20px;
   padding-top: 30px;
   padding-left: 0;
+}
+
+.footer-links-list a {
+  color: #ffffff;
+}
+
+.footer-links-list a:hover {
+  color: #ffffff;
+  text-decoration:underline;
 }
 
 .container-fluid.footer {
