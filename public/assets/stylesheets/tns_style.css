@@ -494,6 +494,7 @@ dd {
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+  opacity: 50;
 }
 
 @-webkit-keyframes fade {
