@@ -188,12 +188,6 @@ hr {
   padding-right: 85px;
 }
 
-/* HOMEPAGE */
-
-.welcome-text h4 {
-  padding-top: 15px;
-}
-
 /* BUTTONS */
 
 .tabbing nav nav-pills {
@@ -223,7 +217,7 @@ hr {
   border-color: #767676;
 }
 
-.btn-primary a:hover {
+.btn-primary:hover {
   background-color: #f2f2f2;
   text-decoration: underline;
 }
@@ -250,6 +244,10 @@ hr {
 
 /* RESULTS DISPLAY */
 
+.next {
+  background-color: #ffffff;
+}
+
 .record-type-badge.resource {
   color: #000000;
   font-family: neue;
@@ -265,6 +263,7 @@ hr {
 
 .single_note {
   padding-bottom: 15px;
+  padding-top: 15px;
   line-height: 22px;
   font-family: neue;
 }
@@ -418,10 +417,6 @@ dd {
     padding-bottom: 15px;
 }
 
-.accessrestrict {
-  padding-top: 15px;
-}
-
 /* CAROUSEL */
 
 * {box-sizing:border-box}
@@ -439,7 +434,7 @@ dd {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.slideshow-container.prev, .slideshow-container.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
