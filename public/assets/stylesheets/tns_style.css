@@ -34,8 +34,9 @@ p {
 }
 
 a { 
-  color: #e42a1d;
-}  
+  color: #000000;
+  text-decoration: underline;
+} 
 
 a:hover {
   color: #e42a1d;
@@ -70,9 +71,18 @@ hr {
 #site-title {
   font-size: 30px;
   font-family: neue bold, neuebold;
-  color: #000000;
   margin-bottom: 5px;
   margin-top: 10px;
+}
+
+#site-title a {
+  color: #e42a1d; 
+  text-decoration: none;
+}
+
+#site-title a:hover {
+  color: #e42a1d; 
+  text-decoration: underline;
 }
 
 #fullsitetitle {
@@ -188,6 +198,7 @@ hr {
 
 .tabbing.nav-pills > li > a:hover {
   text-decoration: underline;
+  color: #e42a1d;
 }
 
 .btn-primary {
@@ -504,6 +515,7 @@ dd {
   padding-bottom: 20px;
   padding-top: 30px;
   padding-left: 0;
+  color: #ffffff;
 }
 
 .footer-links-list a {
