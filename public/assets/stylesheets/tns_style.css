@@ -7,12 +7,17 @@ h1 {
 h2, h4 {
   font-family: neue;
   color: #000000;
+  line-height: 1.6;
+}
+
+h4 {
+  margin-top: 25px;
 }
 
 h3 {
   color: #000000;
-  font-family: neue;
-  font-size: 20px;
+  font-family: neue display, neuedisplay;
+  font-size: 16px;
   font-weight: bold;
   margin-top: 10px;
 }
@@ -34,8 +39,7 @@ p {
 }
 
 a { 
-  color: #000000;
-  text-decoration: underline;
+  color: #e42a1d;
 } 
 
 a:hover {
@@ -150,6 +154,11 @@ hr {
 
 .menu-item a {
   color: #ffffff;
+}
+
+.menu-item a: hover {
+  color: #e42a1d;
+  text-decoration: underline;
 }
 
 .clearfix-menu {
@@ -355,6 +364,10 @@ dd {
   font-family: neue;
 }
 
+.filter_more {
+  padding-bottom: 20px;
+}
+
 /* REPOSITORY PAGE */
 
 .contact_info {
@@ -524,7 +537,7 @@ dd {
 }
 
 .footer-links-list a:hover {
-  color: #ffffff;
+  color: #e42a1d;
   text-decoration:underline;
 }
 
