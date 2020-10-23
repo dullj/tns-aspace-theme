@@ -16,7 +16,7 @@ h4 {
 
 h3 {
   color: #000000;
-  font-family: neue display, neuedisplay;
+  font-family: neuedisplayblack, neue display black
   font-size: 16px;
   font-weight: bold;
   margin-top: 10px;
@@ -48,6 +48,11 @@ a:hover {
 }
 
 a:active {
+  color: #e42a1d;
+  text-decoration: underline;
+}
+
+a:visited {
   color: #e42a1d;
   text-decoration: underline;
 }
@@ -263,7 +268,6 @@ hr {
 
 .single_note {
   padding-bottom: 15px;
-  padding-top: 15px;
   line-height: 22px;
   font-family: neue;
 }
@@ -434,7 +438,7 @@ dd {
 }
 
 /* Next & previous buttons */
-.slideshow-container.prev, .slideshow-container.next {
+#prevbutton, #nextbutton {
   cursor: pointer;
   position: absolute;
   top: 50%;
