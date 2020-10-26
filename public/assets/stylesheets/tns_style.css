@@ -16,7 +16,7 @@ h4 {
 
 h3 {
   color: #000000;
-  font-family: neuedisplayblack, neue display black
+  font-family: neuedisplayblack, neue display black;
   font-size: 16px;
   font-weight: bold;
   margin-top: 10px;
@@ -40,6 +40,7 @@ p {
 
 a { 
   color: #e42a1d;
+  font-family: neue;
 } 
 
 a:hover {
@@ -55,6 +56,10 @@ a:active {
 a:visited {
   color: #e42a1d;
   text-decoration: underline;
+}
+
+ol, ul {
+  font-family: neue;
 }
 
 .present_list a:active {
@@ -249,10 +254,6 @@ hr {
 
 /* RESULTS DISPLAY */
 
-.next {
-  background-color: #ffffff;
-}
-
 .record-type-badge.resource {
   color: #000000;
   font-family: neue;
@@ -270,6 +271,10 @@ hr {
   padding-bottom: 15px;
   line-height: 22px;
   font-family: neue;
+}
+
+.abstract {
+  padding-top: 10px;
 }
 
 .present_list agents_list {
