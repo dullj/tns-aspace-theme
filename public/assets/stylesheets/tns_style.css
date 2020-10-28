@@ -228,6 +228,17 @@ hr {
 
 .btn-primary:hover {
   background-color: #f2f2f2;
+  color: #e42a1d;
+  text-decoration: underline;
+}
+
+.btn-primary:active {
+  color: #e42a1d;
+  text-decoration: underline;
+}
+
+.btn-primary:visited {
+  color: #e42a1d;
   text-decoration: underline;
 }
 
@@ -314,6 +325,16 @@ hr {
 }
 
 /* COLLECTION PAGE */
+
+.panel-title {
+    font-size: 18px;
+    font-family: neue;
+}
+
+.panel-title a:visited {
+  color: #e42a1d;
+  text-decoration: underline;
+}
 
 .breadcrumb * a:hover {
   color: DARKGRAY;
