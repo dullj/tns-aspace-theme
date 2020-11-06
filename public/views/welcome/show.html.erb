@@ -16,13 +16,118 @@
          ]
   } %>
 
-<div class="row welcome-text">
-  <div class="col-sm-6">
-    <h3>About this site</h3>
-    <p><a href="https://www.lipsum.com/">Lorem ipsum</a> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="row welcome-text" role="main">
+  <div class="col-sm-8">
+    
+    <h3>Welcome</h3>
+    <p>On this site you can search collection guides (also called finding aids) that describe archival collections held by The New School Archives. When a new collection becomes available for research, the guide for the collection is added to this site.</p>
+    <hr>
+
+    <h3>What are archival collections?</h3>
+    <p>Archival collections are groups of primary source materials created by a person, group of people, or organization in the course of their everyday work or activities. Collections can range in size from a single document to hundreds of boxes or gigabytes of digital files. They can contain a range of materials, including documents, drawings, photographs, websites, and audiovisual records. Unlike published materials, archival collections are usually unique and exist only in the collection where a researcher finds them.</p>
+    <hr>
+
+    <h3>What is not on this site?</h3>
+    <p>Collection guides inform researchers about a collection; they do not contain the actual documents in a collection. To learn more about using collection guides, see this <a href="https://guides.library.newschool.edu/c.php?g=274422&p=1830828" target="_blank" rel="noopener">LibGuide.</a></p>
+
+    <ul>
+      <li>
+        <p><u>Digital Collections:</u> While the guides you find here contain links to collections that include digitized or born-digital material, not everything in the Archives is available in digital form. To browse and search the digital archives, visit our <a href="https://digitalarchives.library.newschool.edu/" target="_blank" rel="noopener">Digital Collections</a> database.</p>
+      </li>
+
+      <li>
+        <p><u>Unprocessed Collections:</u> This site does not include collections in The New School Archives that have not yet been cataloged. If you cannot find the information you are seeking here, contact us at <a href="mailto:archives@newschool.edu">archives@newschool.edu</a> and we will gladly check our internal database for you.</p>
+      </li>
+
+      <li>
+        <p><u>Items in the Library:</u> Use The New School Library <a href="https://library.newschool.edu/" rel="noopener" target="_blank">catalog</a> to search for published library materials, such as books, journals, and commercial recordings.</p>
+      </li>
+
+      <li>
+        <p><u>Special Collections:</u> Find information about our published <a href="https://archives.newschool.edu" target="_blank" rel="noopener">Special Collections</a> holdings, such as artists' books and scores.</p>
+      </li>
+    </ul>
+      
+    <hr>
+      
+    <h3>Questions?</h3>
+      <p>Learn more about The New School Archives and Special Collections on our <a href="https://archives.newschool.edu" target="_blank" rel="noopener">homepage.</a></p>
+      <p>Contact us at <a href="mailto:archives@newschool.edu">archives@newschool.edu</a> to schedule an online appointment, request that our staff conduct research on your behalf, or for questions about The New School Archives and Special Collections.</p>
+      
   </div>
-  <div class="col-sm-6">
-    <h3>Visiting Special Collections</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="col-sm-4">
+      <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <a href="https://findingaids.archives.newschool.edu/repositories/3/resources/195"><img src="assets/img1.jpg" style="width:100%"></a>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <a href="https://findingaids.archives.newschool.edu/repositories/3/resources/54"><img src="assets/img2.jpg" style="width:100%"></a>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <a href="https://findingaids.archives.newschool.edu/repositories/3/resources/65"><img src="assets/img3.jpg" style="width:100%"></a>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <a href="https://findingaids.archives.newschool.edu/repositories/3/resources/195"><img src="assets/img4.jpg" style="width:100%"></a>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <a href="https://findingaids.archives.newschool.edu/repositories/3/resources/182"><img src="assets/img5.jpg" style="width:100%"></a>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" id="prevbutton" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" id="nextbutton" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
   </div>
 </div>
