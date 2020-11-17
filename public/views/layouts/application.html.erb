@@ -12,6 +12,16 @@
 		function OptanonWrapper() { }
 	</script>
 	<!-- OneTrust Cookies Consent Notice end for newschool.edu -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7966352-16"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-7966352-16');
+    </script>
 	
 	<link href="<%= asset_path('favicon.ico') %>" rel="shortcut icon" type="image/x-icon" />
 	<title><%=  (@page_title.blank? ? '' : "#{strip_mixed_content(@page_title)} | ") %><%= t('brand.title') %></title>
