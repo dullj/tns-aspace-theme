@@ -3,3 +3,6 @@ en:
     title: The New School Archives & Special Collections
     welcome_page_title: Finding Aids
     welcome_head: Welcome to Finding Aids at The New School
+  actions:
+    collection_overview: Collection Overview
+    hierarch: Collection Details
