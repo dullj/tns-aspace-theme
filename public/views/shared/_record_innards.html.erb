@@ -9,7 +9,7 @@
 
     end %>
     <% unless over.blank? %>
-      <%= render partial: 'shared/single_note', locals: {:type => 'scopecontent', :note_struct => over} %>
+      <%= render partial: 'shared/single_note', locals: {:type => 'abstract', :note_struct => over} %>
     <% end %>
 
     <% unless @result.dates.blank? %>
@@ -77,6 +77,7 @@
 	   <%= render partial: 'shared/accordion_panel', locals: {:p_title =>  t('subject._plural'),
 	      :p_id => 'subj_list', :p_body => x} %>
 	<% end %>
+
   <% unless @result.classifications.blank? %>
     <% x= render partial: 'classifications/related_listing', locals: {:classifications => @result.classifications} %>
     <%= render partial: 'shared/accordion_panel', locals: {:p_title =>  t('classification._plural'),

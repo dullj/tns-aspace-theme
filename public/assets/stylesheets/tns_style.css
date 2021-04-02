@@ -57,6 +57,11 @@ a:visited {
   text-decoration: underline;
 }
 
+a:focus {
+  color: #e42a1d;
+  text-decoration: underline;
+}
+
 ol, ul {
   font-family: neue;
 }
@@ -135,6 +140,11 @@ hr {
 }
 
 .navbar-default .navbar-nav>li>a:active {
+  color: #e42a1d;
+  text-decoration: underline;
+}
+
+.navbar-default .navbar-nav>li>a:focus {
   color: #e42a1d;
   text-decoration: underline;
 }
@@ -256,6 +266,12 @@ hr {
   text-decoration: underline;
 }
 
+.btn-primary:focus, .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open>.btn-primary.dropdown-toggle:hover, .open>.btn-primary.dropdown-toggle:focus, .open>.btn-primary.dropdown-toggle.focus {
+  color: #e42a1d;
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+
 .more-facets .btn {
   font-family: neue; 
 }
@@ -263,6 +279,10 @@ hr {
 .pagination>.active>a, .pagination>.active>a:hover, .pagination>.active>a:focus, .pagination>.active>span, .pagination>.active>span:hover, .pagination>.active>span:focus {
   background-color: gray;
   border-color: gray;
+}
+
+.pagination>li>a:hover, .pagination>li>a:focus, .pagination>li>span:hover, .pagination>li>span:focus {
+  color:#e42a1d;
 }
 
 .pagination>li>a, .pagination>li>span {
@@ -535,7 +555,7 @@ dd {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.dot:hover {
   background-color: #717171;
 }
 

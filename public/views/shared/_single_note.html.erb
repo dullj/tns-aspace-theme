@@ -1,0 +1,37 @@
+<%  if !note_struct['note_text'].blank? %>
+    <div class="<%= type %> single_note" >
+     <% unless defined?(notitle) &&  notitle %>
+       <% if note_struct['label'] != 'Abstract' %>       
+         <h3><%= note_struct['label'] %></h3>
+       <% else %>
+         <h3>Overview</h3>
+       <% end %>
+     <% end %>
+     <% if note_struct.has_key?('subnotes') %>
+       <% note_struct['subnotes'].each do |subnote| %>
+         <div class="subnote <%= 'well' if subnote['jsonmodel_type'] == 'note_citation' %>">
+           <% if subnote['jsonmodel_type'] == 'note_citation' %>
+             <h4><%= t('actions.cite') %></h4>
+           <% elsif subnote['_title'] %>
+             <h4><%= subnote['_title'] %></h4>
+           <% elsif subnote['_inline_label'] %>
+             <span class='inline-label'><%= subnote['_inline_label'] %></span>
+           <% end %>
+           <span class="note-content">
+             <% unless note_struct['is_inherited'].blank? %>
+               <%= inheritance(note_struct['is_inherited']).html_safe %>
+             <% end %>
+             <%= subnote['_text'].html_safe %>
+           </span>
+         </div>
+       <% end %>
+     <% else %>
+       <div class="note-content">
+         <% unless note_struct['is_inherited'].blank? %>
+           <%= inheritance(note_struct['is_inherited']).html_safe %>
+         <% end %>
+         <%= note_struct['note_text'].html_safe %>
+       </div>
+     <% end %>
+     </div>
+<% end %>
