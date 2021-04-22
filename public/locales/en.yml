@@ -6,3 +6,6 @@ en:
   actions:
     collection_overview: Collection Overview
     hierarch: Collection Details
+    cite: Preferred Citation
+  filter:
+    add: Most Popular Filters
