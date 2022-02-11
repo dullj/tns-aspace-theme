@@ -2,12 +2,14 @@ h1 {
   color: #000000;
   font-family: neue;
   font-size: 1.5rem;
+  font-weight: normal;
 }
 
 h2, h4 {
   font-family: neue;
   color: #000000;
   line-height: 1.6;
+  font-weight: normal;
 }
 
 h4 {
@@ -16,15 +18,14 @@ h4 {
 
 h3 {
   color: #000000;
-  font-family: neuedisplayblack, neue display black;
-  font-size: 16px;
-  font-weight: bold;
+  font-family: neue;
+  font-size: 1.5rem;
+  font-weight: normal;
   margin-top: 10px;
 }
 
 h5 {
   font-family: neueblack, neue black, neue;
-  font-weight: bold;
   font-size: 18px;
 }
 
@@ -36,6 +37,10 @@ p {
   line-height: 25px;
   font-weight: 400;
   font-family: neue;
+}
+
+body {
+  font-size:16px;
 }
 
 a { 
@@ -301,6 +306,15 @@ hr {
 .record-type-badge.resource {
   color: #000000;
   font-family: neue;
+  font-weight: normal;
+}
+
+.identifier .id-label {
+  font-weight: normal;
+}
+
+span.component {
+  font-weight: normal;
 }
 
 .recordrow .recordsummary {
@@ -313,7 +327,7 @@ hr {
 
 .single_note {
   padding-bottom: 15px;
-  line-height: 22px;
+  line-height: 27px;
   font-family: neue;
 }
 
