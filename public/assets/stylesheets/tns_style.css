@@ -170,9 +170,6 @@ hr {
 .row welcome-text {
   padding-top: 10px;
   padding-bottom: 15px;
-}
-
-.row welcome-text p {
   line-height: 30px;
   font-size: 18px;
 }
