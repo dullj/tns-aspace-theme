@@ -172,6 +172,11 @@ hr {
   padding-bottom: 15px;
 }
 
+.row welcome-text p {
+  line-height: 30px;
+  font-size: 18px;
+}
+
 .menu-item {
   display: inline; 
 }
