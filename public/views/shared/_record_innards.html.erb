@@ -1,6 +1,6 @@
 <!-- Look for '_inherited' and '*_inherited' properties -->
-<% non_folder = %w(summary langmaterial accessrestrict userestrict bioghist) %>
-<% folder = %w(scopecontent arrangement phystech physloc otherfindaid custodhist acqinfo appraisal accruals originalsloc altformavail extent relatedmaterial separatedmaterial note_bibliography materialspec physdesc inscription physfacet dimensions edition fileplan legalstatus odd note processinfo note_index) %>
+<% non_folder = %w(summary otherfindaid langmaterial) %>
+<% folder = %w(scopecontent accessrestrict userestrict bioghist arrangement phystech physloc custodhist acqinfo appraisal accruals originalsloc altformavail extent relatedmaterial separatedmaterial note_bibliography materialspec physdesc inscription physfacet dimensions edition fileplan legalstatus odd note processinfo note_index) %>
 <div class="upper-record-details">
     <% over = @result.note('abstract') %>
     <% if over.blank?
@@ -120,5 +120,5 @@
     </div>
     <script type="text/javascript" >
       initialize_accordion(".note_panel", "<%= t('accordion.expand') %>" , "<%= t('accordion.collapse') %>");
-      collapse_all('.note_panel',true);
+      expand_all('.note_panel',true);
     </script>
