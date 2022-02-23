@@ -1,55 +1,40 @@
-  <%= render partial: 'shared/search', locals: {
-    :search_url => "/search",
-    :title => t('archive._plural'),
-    :limit_options => [
-          ["#{t('actions.search')} #{t('search-limits.all')}",''],
-          [t('search-limit', :limit => t('search-limits.resources')),'resource'],
-          [t('search-limit', :limit => t('search-limits.digital')),'digital_object']
-        ],
-    :field_options => [
-          ["#{t('search_results.filter.fullrecord')}",''],
-          ["#{t('search_results.filter.title')}",'title'],
-          ["#{t('search_results.filter.creators')}",'creators_text'],
-          ["#{t('search_results.filter.subjects')}",'subjects_text'],
-          ["#{t('search_results.filter.notes')}", 'notes'],
-          ["#{t('search_results.filter.identifier')}", 'four_part_id']
-         ]
-  } %>
 
+  
 <div class="row welcome-text" role="main">
-  <div class="col-sm-12">
+  <div id="welcome-text">
+  	<h3 class="guide-search-button"><a href="/search?reset=true">Search the Collection Guides</a></h3>
     
-
-    <p>On this site you can search collection guides (also called finding aids) that describe archival collections held by The New School Archives. When a new collection becomes available for research, the guide for the collection is added to this site.</p>
-
+    <p>Collection Guides (also called <a href="https://dictionary.archivists.org/entry/finding-aid.html">finding aids</a>) describe archival collections held by The New School Archives. When a new collection becomes available for research, the guide for the collection is added to this site.</p>
+  
     <h3>What are archival collections?</h3>
     <p>Archival collections are groups of primary source materials created by a person, group of people, or organization in the course of their everyday work or activities. Collections can range in size from a single document to hundreds of boxes or gigabytes of digital files. They can contain a range of materials, including documents, drawings, photographs, websites, and audiovisual records. Unlike published materials, archival collections are usually unique and exist only in the collection where a researcher finds them.</p>
 
     <h3>What is not on this site?</h3>
     <p>Collection guides inform researchers about a collection; they do not contain the actual documents in a collection. To learn more about using collection guides, see this <a href="https://guides.library.newschool.edu/c.php?g=274422&p=1830828" target="_blank" rel="noopener">LibGuide.</a></p>
 
-    <ul>
+    <ul id="site-contents">
       <li>
-        <p><u>Digital Collections:</u> While the guides you find here contain links to collections that include digitized or born-digital material, not everything in the Archives is available in digital form. To browse and search the digital archives, visit our <a href="https://digital.archives.newschool.edu/" target="_blank" rel="noopener">Digital Collections</a> database.</p>
+        <p>DIGITAL COLLECTIONS: While the guides you find here contain links to collections that include digitized or born-digital material, not everything in the Archives is available in digital form. To browse and search the digital archives, visit our <a href="https://digital.archives.newschool.edu/" target="_blank" rel="noopener">Digital Collections</a> database.</p>
       </li>
 
       <li>
-        <p><u>Unprocessed Collections:</u> This site does not include collections in The New School Archives that have not yet been cataloged. If you cannot find the information you are seeking here, contact us at <a href="mailto:archives@newschool.edu">archives@newschool.edu</a> and we will gladly check our internal database for you.</p>
+        <p>UNPROCESSED COLLECTIONS: This site does not include collections in The New School Archives that have not yet been cataloged. If you cannot find the information you are seeking here, contact us at <a href="mailto:archives@newschool.edu">archives@newschool.edu</a> and we will gladly check our internal database for you.</p>
       </li>
 
       <li>
-        <p><u>Items in the Library:</u> Use The New School Library <a href="https://library.newschool.edu/" rel="noopener" target="_blank">catalog</a> to search for published library materials, such as books, journals, and commercial recordings.</p>
+        <p>ITEMS IN THE LIBRARY: Use The New School Library <a href="https://library.newschool.edu/" rel="noopener" target="_blank">catalog</a> to search for published library materials, such as books, journals, and commercial recordings.</p>
       </li>
 
       <li>
-        <p><u>Special Collections:</u> Find information about our published <a href="https://archives.newschool.edu" target="_blank" rel="noopener">Special Collections</a> holdings, such as artists' books and scores.</p>
+        <p>SPECIAL COLLECTIONS: Find information about our published <a href="https://archives.newschool.edu" target="_blank" rel="noopener">Special Collections</a> holdings, such as artists' books and scores.</p>
       </li>
     </ul>
       
+
       
     <h3>Questions?</h3>
       <p>Learn more about The New School Archives and Special Collections on our <a href="https://archives.newschool.edu" target="_blank" rel="noopener">homepage.</a></p>
       <p>Contact us at <a href="mailto:archives@newschool.edu">archives@newschool.edu</a> to schedule an online appointment, request that our staff conduct research on your behalf, or for questions about The New School Archives and Special Collections.</p>
-      
+
   </div>
 </div>
