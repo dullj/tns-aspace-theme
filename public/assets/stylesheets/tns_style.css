@@ -19,7 +19,7 @@ h4 {
 h3 {
   color: #000000;
   font-family: neue;
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: normal;
   margin-top: 10px;
 }
@@ -27,6 +27,7 @@ h3 {
 h5 {
   font-family: neueblack, neue black, neue;
   font-size: 18px;
+  font-weight:normal;
 }
 
 h1, .h1, h2, .h2, .h3 {
@@ -85,6 +86,41 @@ hr {
   border-top: 1px solid #000000;
 }
 
+/* HOMEPAGE */
+
+#welcome-text {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65vw;
+}
+
+#welcome-text p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#welcome-text h3 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+#site-contents li {
+	padding-top: 10px;
+	list-style: circle;
+}
+
+h3.guide-search-button {
+	margin-bottom: 35px;
+    margin-top: 35px;
+    border: 2px solid #000000;
+    background-color: #f5f5f5;
+    padding: 20px;
+    font-family: neue display wide, neuedisplaywide, neuedisplayblack;
+    font-size: 18px;
+}
+    
 /* HEADER */
 
 #header .logo {
@@ -138,6 +174,7 @@ hr {
 
 .navbar-default {
     border-color: #ffffff;
+    background-color:transparent;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -234,7 +271,6 @@ hr {
   font-family: neue;
   font-size: 12px;
   line-height: 23px;
-  font-weight: 900;
   font-style: normal;
   letter-spacing: .05rem;
   color: #e42a1d;
@@ -303,6 +339,10 @@ hr {
   padding-top: 20px;
 }
 
+.search h3 {
+	text-align: center;
+}
+
 /* RESULTS DISPLAY */
 
 .record-type-badge.resource {
@@ -354,8 +394,12 @@ span.component {
   font-family: neue;
 }
 
+.badge-and-identifier {
+    padding-top: 10px;
+}
+
 .recordrow {
-  padding: 20px;
+    padding: 20px 20px 20px 0px;
 }
 
 .more-facets .btn {
@@ -367,14 +411,56 @@ span.component {
 .record-type-badge.subject {
   color: #000000;
   border-color: #000000;
+  font-family: neue;
+  font-weight:normal;
 }
+
 
 .record-type-badge.archival_object {
   color: #000000;
   border-color: #ffffff;
+  font-weight:normal;
+}
+
+#sidebar {
+  border: none;
 }
 
 /* COLLECTION PAGE */
+
+.page_action {
+	border: none;
+}
+
+.note h3 {
+	font-size:1.5rem;
+}
+
+#main-content h1 {
+	margin-bottom: 0px;
+}
+
+.form-control {
+	font-family: neue;
+}
+
+#sort {
+	font-family: 'Neue';
+    font-size: 12px;
+    padding: 10px;
+}
+
+.inline-label {
+	font-weight: normal;
+}
+
+.recordrow {
+  border: none;
+}
+
+#facets-sidebar {
+	background-color: #f5f5f5;
+}
 
 .panel-title {
     font-size: 18px;
@@ -387,26 +473,59 @@ span.component {
 }
 
 .breadcrumb * a:hover {
-  color: DARKGRAY;
+    text-decoration: underline;
+    color: #e42a1d;
 }
 
 .breadcrumb * a {
-  color: #000000;
-  text-decoration: underline;
+  color: #e42a1d;
+}
+
+.breadcrumb {
+	background-color: transparent;
+	padding: 20px 0px 20px 0px;
+	font-size: 16px;
+}
+
+.breadcrumb>li+li:before {
+    content: "/ ";
+}
+
+.tabbing.nav-pills > li:last-child a {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.tabbing.nav-pills>li:first-child a {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius:0;
+}
+
+.nav-pills > li > a {
+	border-radius: 0;
 }
 
 .tabbing.nav-pills>li>a.hover {
-  background-color: #e7e7e7;
+  background-color: transparent;
   color: #000000;
+  font-size: 20px;
 }
 
 .tabbing.nav-pills>li>a.active {
-  background-color: #e7e7e7;
   color: #000000;
+  font-size: 1.5rem;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  text-decoration:none;
 }
 
 .tabbing.nav-pills>li>a {
-  background-color: DARKGRAY;
+  color: #e42a1d;
+  background-color: transparent;
+  font-size: 1.5rem;
+  border-radius: 0;
 }
 
 .subnote {
@@ -417,11 +536,13 @@ span.component {
 blockquote {
   padding: 20px 20px;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 dt {
   padding-top: 10px;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 dt, dd {
@@ -431,7 +552,11 @@ dt, dd {
 }
 
 dd {
-  padding-top: 5px;
+  padding-top: 10px;
+}
+
+.recordnumber {
+  font-weight: normal;
 }
 
 .extent {
@@ -442,43 +567,62 @@ dd {
   font-family: neue;
 }
 
+.dates strong {
+  font-weight: normal;
+}
+
+.result_context strong {
+  font-weight: normal;
+}
+
 .filter_more {
   padding-bottom: 20px;
+}
+
+/* INVENTORY PAGE */
+
+.infinite-record-wrapper {
+	height: auto;
+}
+
+.infinite-item h3 {
+  margin-top: 30px;
 }
 
 /* REPOSITORY PAGE */
 
 .contact_info {
-  margin-top: 15px;
+  padding-top: 15px;
   font-family: neue;
-  font-size: 12px;
-  line-height: 20px;
+  padding-bottom: 15px;
+}
+
+#whats-in-container {
+	padding-left:0;
 }
 
 .clear {
   font-family: neue;
-  font-size: 14px;
-  line-height: 20px;
+  padding-top: 15px;
+  line-height: 26px;
 }
 
 .record-type-badge.repository {
   font-family: neue;
   color: #767676;
+  font-weight:normal;
 }
 
 .record-type-badge.digital_object {
   font-family: neue;
   color: #767676;
-}
-
-.record-type-badge.subject {
-  font-family: neue;
-  color: #767676;
+  font-weight:normal;
 }
 
 .record-type-badge.agent {
   font-family: neue;
   color: #767676;
+  font-weight:normal;
 }  
 
 .record-title {
