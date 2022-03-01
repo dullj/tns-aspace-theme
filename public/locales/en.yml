@@ -4,11 +4,11 @@ en:
     welcome_page_title: Finding Aids
     welcome_head: Welcome to Finding Aids at The New School
   actions:
-    collection_overview: Collection Details
+    collection_overview: Collection Overview
     hierarch: Collection Inventory
     cite: Preferred Citation
   filter:
     add: Most Popular Filters
   enumerations:
     _note_types: &note_type_definitions
-      otherfindaid: Something Else
+      otherfindaid: Online Access
