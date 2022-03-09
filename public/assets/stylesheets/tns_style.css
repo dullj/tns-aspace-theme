@@ -480,6 +480,10 @@ span.component {
 	border-right: none;
 }
 
+.infinite-record-record {
+    background-image: repeating-linear-gradient(90deg, transparent, transparent 19px, #000000 20px);
+}
+
 .page_action {
 	border: none;
 }
