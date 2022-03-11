@@ -7,7 +7,7 @@ en:
     collection_overview: Collection Overview
     hierarch: Collection Inventory
     cite: Preferred Citation
-    print: Print
+    print: Export to PDF
   filter:
     add: Most Popular Filters
   enumerations:
