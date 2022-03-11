@@ -118,10 +118,10 @@ hr {
 }
 
 #site-title {
-  font-size: 30px;
-  font-family: neue bold, neuebold;
+  font-size: 34px;
+  font-family: neue;
   margin-bottom: 5px;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 #site-title a {
@@ -478,10 +478,6 @@ span.component {
 
 #sidebar.resizable-sidebar .resizable-sidebar-handle {
 	border-right: none;
-}
-
-.infinite-record-record {
-    background-image: repeating-linear-gradient(90deg, transparent, transparent 19px, #000000 20px);
 }
 
 .page_action {
