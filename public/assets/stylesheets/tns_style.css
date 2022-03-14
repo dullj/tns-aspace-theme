@@ -2,12 +2,14 @@ h1 {
   color: #000000;
   font-family: neue;
   font-size: 1.5rem;
+  font-weight: normal;
 }
 
 h2, h4 {
   font-family: neue;
   color: #000000;
   line-height: 1.6;
+  font-weight: normal;
 }
 
 h4 {
@@ -16,16 +18,16 @@ h4 {
 
 h3 {
   color: #000000;
-  font-family: neuedisplayblack, neue display black;
-  font-size: 16px;
-  font-weight: bold;
+  font-family: neue;
+  font-size: 20px;
+  font-weight: normal;
   margin-top: 10px;
 }
 
 h5 {
   font-family: neueblack, neue black, neue;
-  font-weight: bold;
   font-size: 18px;
+  font-weight:normal;
 }
 
 h1, .h1, h2, .h2, .h3 {
@@ -36,6 +38,10 @@ p {
   line-height: 25px;
   font-weight: 400;
   font-family: neue;
+}
+
+body {
+  font-size:16px;
 }
 
 a { 
@@ -80,6 +86,31 @@ hr {
   border-top: 1px solid #000000;
 }
 
+/* HOMEPAGE */
+
+#welcome-text {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65vw;
+}
+
+#welcome-text p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#welcome-text h3 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+#site-contents li {
+	padding-top: 10px;
+	list-style: circle;
+}
+    
 /* HEADER */
 
 #header .logo {
@@ -87,10 +118,10 @@ hr {
 }
 
 #site-title {
-  font-size: 30px;
-  font-family: neue bold, neuebold;
+  font-size: 34px;
+  font-family: neue;
   margin-bottom: 5px;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 #site-title a {
@@ -133,6 +164,7 @@ hr {
 
 .navbar-default {
     border-color: #ffffff;
+    background-color:transparent;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -165,6 +197,8 @@ hr {
 .row welcome-text {
   padding-top: 10px;
   padding-bottom: 15px;
+  line-height: 30px;
+  font-size: 18px;
 }
 
 .menu-item {
@@ -227,7 +261,6 @@ hr {
   font-family: neue;
   font-size: 12px;
   line-height: 23px;
-  font-weight: 900;
   font-style: normal;
   letter-spacing: .05rem;
   color: #e42a1d;
@@ -296,11 +329,82 @@ hr {
   padding-top: 20px;
 }
 
+.search h3 {
+	text-align: center;
+}
+
+/* HOMEPAGE ACCORDION */
+
+.front-accordion {
+  background-color: #ffffff;
+  cursor: pointer;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-bottom:1px solid #eeeeee;
+  font-family: neue;
+  font-size: 18px;
+  padding: 20px 15px 15px 15px;
+}
+
+@media screen and (max-width: 767px) {
+.front-accordion {
+	font-size: 14px;
+	}
+}
+
+.active, .front-accordion:hover {
+  background-color: #f2f2f2;
+}
+
+.front-accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.front-panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom:0px;
+  border:0;
+}
+
+.front-panel h3:hover {
+	text-decoration: underline;
+	color: #e42a1d;
+}
+
+.front-panel p {
+	padding-top: 5px;
+	padding-bottom: 5px; 
+}
+
+
 /* RESULTS DISPLAY */
 
 .record-type-badge.resource {
   color: #000000;
   font-family: neue;
+  font-weight: normal;
+}
+
+.identifier .id-label {
+  font-weight: normal;
+}
+
+span.component {
+  font-weight: normal;
 }
 
 .recordrow .recordsummary {
@@ -313,7 +417,7 @@ hr {
 
 .single_note {
   padding-bottom: 15px;
-  line-height: 22px;
+  line-height: 27px;
   font-family: neue;
 }
 
@@ -338,8 +442,12 @@ hr {
   font-family: neue;
 }
 
+.badge-and-identifier {
+    padding-top: 10px;
+}
+
 .recordrow {
-  padding: 20px;
+    padding: 20px 20px 20px 0px;
 }
 
 .more-facets .btn {
@@ -351,14 +459,60 @@ hr {
 .record-type-badge.subject {
   color: #000000;
   border-color: #000000;
+  font-family: neue;
+  font-weight:normal;
 }
+
 
 .record-type-badge.archival_object {
   color: #000000;
   border-color: #ffffff;
+  font-weight:normal;
+}
+
+#sidebar {
+  border: none;
 }
 
 /* COLLECTION PAGE */
+
+#sidebar.resizable-sidebar .resizable-sidebar-handle {
+	border-right: none;
+}
+
+.page_action {
+	border: none;
+}
+
+.note h3 {
+	font-size:1.5rem;
+}
+
+#main-content h1 {
+	margin-bottom: 0px;
+}
+
+.form-control {
+	font-family: neue;
+}
+
+#sort {
+	font-family: 'Neue';
+    font-size: 12px;
+    padding: 10px;
+}
+
+.inline-label {
+	font-weight: normal;
+}
+
+.recordrow {
+  border: none;
+}
+
+#facets-sidebar {
+	background-color: #f5f5f5;
+}
 
 .panel-title {
     font-size: 18px;
@@ -371,26 +525,59 @@ hr {
 }
 
 .breadcrumb * a:hover {
-  color: DARKGRAY;
+    text-decoration: underline;
+    color: #e42a1d;
 }
 
 .breadcrumb * a {
-  color: #000000;
-  text-decoration: underline;
+  color: #e42a1d;
+}
+
+.breadcrumb {
+	background-color: transparent;
+	padding: 20px 0px 20px 0px;
+	font-size: 16px;
+}
+
+.breadcrumb>li+li:before {
+    content: "/ ";
+}
+
+.tabbing.nav-pills > li:last-child a {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.tabbing.nav-pills>li:first-child a {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius:0;
+}
+
+.nav-pills > li > a {
+	border-radius: 0;
 }
 
 .tabbing.nav-pills>li>a.hover {
-  background-color: #e7e7e7;
+  background-color: transparent;
   color: #000000;
+  font-size: 20px;
 }
 
 .tabbing.nav-pills>li>a.active {
-  background-color: #e7e7e7;
   color: #000000;
+  font-size: 1.5rem;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  text-decoration:none;
 }
 
 .tabbing.nav-pills>li>a {
-  background-color: DARKGRAY;
+  color: #e42a1d;
+  background-color: transparent;
+  font-size: 1.5rem;
+  border-radius: 0;
 }
 
 .subnote {
@@ -401,11 +588,13 @@ hr {
 blockquote {
   padding: 20px 20px;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 dt {
   padding-top: 10px;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 dt, dd {
@@ -415,7 +604,11 @@ dt, dd {
 }
 
 dd {
-  padding-top: 5px;
+  padding-top: 10px;
+}
+
+.recordnumber {
+  font-weight: normal;
 }
 
 .extent {
@@ -424,45 +617,65 @@ dd {
 
 .dates {
   font-family: neue;
+  padding-bottom:10px;
+}
+
+.dates strong {
+  font-weight: normal;
+}
+
+.result_context strong {
+  font-weight: normal;
 }
 
 .filter_more {
   padding-bottom: 20px;
 }
 
+/* INVENTORY PAGE */
+
+.infinite-record-wrapper {
+	height: auto;
+}
+
+.infinite-item h3 {
+  margin-top: 30px;
+}
+
 /* REPOSITORY PAGE */
 
 .contact_info {
-  margin-top: 15px;
+  padding-top: 15px;
   font-family: neue;
-  font-size: 12px;
-  line-height: 20px;
+  padding-bottom: 15px;
+}
+
+#whats-in-container {
+	padding-left:0;
 }
 
 .clear {
   font-family: neue;
-  font-size: 14px;
-  line-height: 20px;
+  padding-top: 15px;
+  line-height: 26px;
 }
 
 .record-type-badge.repository {
   font-family: neue;
   color: #767676;
+  font-weight:normal;
 }
 
 .record-type-badge.digital_object {
   font-family: neue;
   color: #767676;
-}
-
-.record-type-badge.subject {
-  font-family: neue;
-  color: #767676;
+  font-weight:normal;
 }
 
 .record-type-badge.agent {
   font-family: neue;
   color: #767676;
+  font-weight:normal;
 }  
 
 .record-title {
@@ -580,6 +793,7 @@ dd {
 
 /* FOOTER */
 
+
 .footer-links-list {
   list-style: none;
   font-family: neue;
@@ -587,11 +801,6 @@ dd {
   padding-bottom: 20px;
   padding-top: 30px;
   padding-left: 0;
-  color: #ffffff;
-}
-
-.footer-links-list a {
-  color: #ffffff;
 }
 
 .footer-links-list a:hover {
@@ -600,8 +809,8 @@ dd {
 }
 
 .container-fluid.footer {
-  background-color: #000000;
-  margin-top: 20px;
+  margin-top: 40px;
+  border-top: 2px solid black;
 }
 
 #footer-cp, #footer-cp a {

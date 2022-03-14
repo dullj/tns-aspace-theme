@@ -5,8 +5,12 @@ en:
     welcome_head: Welcome to Finding Aids at The New School
   actions:
     collection_overview: Collection Overview
-    hierarch: Collection Details
+    hierarch: Collection Inventory
     cite: Preferred Citation
+    print: Export to PDF
   search_results:
     filter:
       add: Most Popular Filters
+  enumerations:
+    _note_types: &note_type_definitions
+      otherfindaid: Online Access

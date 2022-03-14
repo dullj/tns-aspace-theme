@@ -1,13 +1,24 @@
 <!-- Look for '_inherited' and '*_inherited' properties -->
-<% non_folder = %w(summary langmaterial accessrestrict userestrict bioghist) %>
-<% folder = %w(scopecontent arrangement phystech physloc otherfindaid custodhist acqinfo appraisal accruals originalsloc altformavail extent relatedmaterial separatedmaterial note_bibliography materialspec physdesc inscription physfacet dimensions edition fileplan legalstatus odd note processinfo note_index) %>
+<% non_folder = %w(otherfindaid summary) %>
+<% folder = %w(scopecontent creator agents_list langmaterial accessrestrict userestrict bioghist arrangement phystech physloc custodhist acqinfo appraisal accruals originalsloc altformavail extent relatedmaterial separatedmaterial note_bibliography materialspec physdesc inscription physfacet dimensions edition fileplan legalstatus odd note processinfo note_index) %>
 <div class="upper-record-details">
+    
+    <% non_folder.each do |type| %>
+      <% (@result.notes[type] || []).each do |note_struct| %>
+       <% unless note_struct['note_text'].blank? %>
+        <%= render partial: 'shared/single_note', locals: {:type => type, :note_struct => note_struct}   %>
+       <% end %>
+      <% end %>
+    <% end %>
+    
     <% over = @result.note('abstract') %>
+    
     <% if over.blank?
        over = @result.note('scopecontent')
        folder.shift # remove scopecontent from in-folder notes
 
     end %>
+    
     <% unless over.blank? %>
       <%= render partial: 'shared/single_note', locals: {:type => 'abstract', :note_struct => over} %>
     <% end %>
@@ -25,16 +36,8 @@
       <% end %>
     <% end %>
 
-    <% non_folder.each do |type| %>
-      <% (@result.notes[type] || []).each do |note_struct| %>
-       <% unless note_struct['note_text'].blank? %>
-        <%= render partial: 'shared/single_note', locals: {:type => type, :note_struct => note_struct}   %>
-       <% end %>
-      <% end %>
-    <% end %>
-
     <% unless @result.extents.blank? %>
-      <h3><%= t('resource._public.extent') %></h3>
+      <h3 style="padding-top:10px"><%= t('resource._public.extent') %></h3>
        <% @result.extents.each do |ext| %>
         <p class="extent"><%= inheritance(ext['_inherited']).html_safe %>
 	  <%= ext['display']%>
@@ -120,5 +123,5 @@
     </div>
     <script type="text/javascript" >
       initialize_accordion(".note_panel", "<%= t('accordion.expand') %>" , "<%= t('accordion.collapse') %>");
-      collapse_all('.note_panel',true);
+      expand_all('.note_panel',true);
     </script>
