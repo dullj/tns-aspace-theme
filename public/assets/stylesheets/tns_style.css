@@ -88,6 +88,10 @@ hr {
 
 /* HOMEPAGE */
 
+.questions {
+	text-align: center;
+}
+
 #welcome-text {
     max-width: 1200px;
     margin-left: auto;
