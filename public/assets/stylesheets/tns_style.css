@@ -121,7 +121,7 @@ hr {
   font-size: 34px;
   font-family: neue;
   margin-bottom: 5px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 #site-title a {
@@ -138,6 +138,7 @@ hr {
   font-family: neuedisplayblack, neue display black;
   margin-bottom: 0;
   margin-top: 30px;
+  font-size: 24px;
 }
 
 #asc-title {
@@ -185,6 +186,7 @@ hr {
   border-bottom: 0;
   border-top: 0;
   background-color: #ffffff !important;
+  margin-left: 15px;
 }  
 
 #header>.row {
