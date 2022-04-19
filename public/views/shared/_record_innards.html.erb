@@ -121,7 +121,6 @@
         <%= render :file => template if File.exists?(template) %>
       <% end %>
     </div>
-    <script type="text/javascript" >
-      initialize_accordion(".note_panel", "<%= t('accordion.expand') %>" , "<%= t('accordion.collapse') %>");
-      expand_all('.note_panel',true);
+    <script type="text/javascript" >initialize_accordion(".note_panel", "<%= t('accordion.expand') %>" , "<%= t('accordion.collapse') %>");
+      collapse_all('.note_panel',false);
     </script>

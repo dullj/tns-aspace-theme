@@ -101,9 +101,9 @@ hr {
 }
 
 #welcome-text h3 {
-    text-align: center;
     margin-top: 40px;
     margin-bottom: 25px;
+    font-size: 24px;
 }
 
 #site-contents li {
@@ -112,6 +112,36 @@ hr {
 }
     
 /* HEADER */
+
+@media screen and (max-width: 767px) {
+#fullsitetitle {
+	font-size: 20px;
+	margin-top: 25px;
+	}
+#site-title {
+	font-size: 25px;
+	}
+ .header-first li {
+  white-space: nowrap;
+	}
+ .header-second li {
+  white-space: nowrap;
+	}
+ .clearfix-menu	{
+ overflow:visible;
+ 	}
+ #welcome-text p {
+  font-size: 16px !important;
+  line-height: 25px;
+	}
+ #welcome-text {
+   width: 75vw;
+	}
+ #welcome-text h3 {
+    font-size: 20px;
+	}
+}
+
 
 #header .logo {
   display: none;
@@ -348,18 +378,19 @@ hr {
   transition: 0.4s;
   border-bottom:1px solid #eeeeee;
   font-family: neue;
-  font-size: 18px;
-  padding: 20px 15px 15px 15px;
+  font-size: 22px;
+  padding: 20px 0px 15px 0px;
+  color:#e42a1d;
 }
 
 @media screen and (max-width: 767px) {
 .front-accordion {
-	font-size: 14px;
+	font-size: 16px;
 	}
 }
 
 .active, .front-accordion:hover {
-  background-color: #f2f2f2;
+  color:#e42a1d;
 }
 
 .front-accordion:after {
