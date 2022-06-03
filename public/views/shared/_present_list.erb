@@ -42,12 +42,12 @@
            <% arr=[] %>
 	   <% item['terms'].each do |term| %> 
             <% unless term['term_type'].blank? %>
-             <% arr.push(term['term_type'].tr('_',' ').titleize.tr(' ','/')) %>
+             <% arr.push(term['term_type'].capitalize.sub('Genre_form','Type of Material').sub('Geographic','Places').sub('Topical','Subject')) %>
             <% end %>
            <% end %>
            <% unique_terms=arr.uniq %>
 	   <% unique_terms.each do |termType| %>
-            -- <%= termType %>
+            (<%= termType %>)
            <% end %>
           <% end %>
          <% if list_clss == 'subjects_list' && AppConfig[:show_source_in_subject_listing] %>
